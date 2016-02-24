@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Calendar -->
+    <div class="span7" id="ical">
+    </div>
+    <!-- Calendar -->
+
+    <!-- Calendar 2 -->
+    <div id="ical" class="span7">
+        <div id="timeList">
+            <div class="drop row-fluid control-group dateMenu">
+                <div class="span4 lbl">
+                    <label data-name="tst" class="label-edit" for="sfx_tst_input"> Choose a  date</label>
+                </div>
+                <div class="span6"><select class="dateMenu"></select></div>
+            </div>
+            <div id="calMonth">
+                <span style="visibility:hidden;" id="arrow-left"><a class="link--prev" href="#">&lt;</a></span>
+
+                <span id="month"></span> <span id="arrow-right"><a class="link--next" href="#">&gt;</a></span>
+            </div>
+            <div class="row" id="calRow"></div>
+            <table class="table" id="traditional" tabindex="0">
+                <tbody>
+                    <tr class="table-headerm">
+                        <th class="col">S</th>
+                        <th scope="col"><span>M</span></th>
+                        <th scope="col"><span>T</span></th>
+                        <th scope="col"><span>W</span></th>
+                        <th scope="col"><span>T</span></th>
+                        <th scope="col"><span>F</span></th>
+                        <th scope="col"><span>S</span></th>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <!-- Calendar 2-->
+    <script src="script.js"></script>
+</body>
+</html>

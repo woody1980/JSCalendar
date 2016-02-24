@@ -1,0 +1,436 @@
+﻿.calen {
+ width:100%
+}
+
+#calen {
+	border:1px solid #ccc;
+	position:relative;
+	width:100%;
+	min-width:280px;
+	text-align:center;
+}
+
+#calRow div , .wd, .blank{
+	float:left;
+	margin:0;
+	width:14.045%;
+	padding:3.5% 0;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+
+@media screen and (max-width: 480px) {
+	#calRow div ,.wd, .blank{
+		float:left;
+		margin:0;
+		width:13.9%;
+		padding:3.5% 0;
+		border-bottom:1px solid #ccc;
+		border-right:1px solid #ccc;
+		text-align:center;
+	}
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	#calRow div ,.wd, .blank{
+		float:left;
+		margin:0;
+		width:13.95%;
+		padding:3.5% 0;
+		border-bottom:1px solid #ccc;
+		border-right:1px solid #ccc;
+		text-align:center;
+	}
+}
+
+.blank {
+color:#fff;
+}
+
+/**/
+.row  > div {
+text-align:center;
+}
+
+.row  > div:nth-child(7n),#calRow div:nth-child(7n) {
+	border-right:none;
+}
+
+
+#timeList {
+border: 1px solid #dedede;
+}
+
+#timeList table {
+ border:#dcdcdc;
+ margin-bottom:0;
+}
+
+ div.d_9, div.d_10, div.d_11,div.d_13,div.d_14,div.d_15,div.d_16,div.d_17 {
+background-color:#0a70bb;
+border-right:1px solid #fff;
+border-bottom:1px solid #fff;
+color:#fff;
+}
+
+
+/* Build Calendar Layout */
+.js_day_container {
+	position:relative;
+	/*border-top:1px solid #ccc;	*/
+}
+
+#timeList  .js_day_container  .row {
+/* margin-left: -20px; */
+margin-left:0;
+}
+
+.next a , .visited a{
+color: #6c6c6c;
+}
+
+.unavail {
+color:#ccc;
+}
+
+input.searchBox {
+color:#ccc;
+}
+
+.right_col_info{
+margin-left:68px;
+}
+
+#reminder {
+	margin-top:20px;
+}
+
+#calMonth {
+	background-color:#eee;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding:7px 5px;
+}
+
+#legend {
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	font-size:12px;
+}
+
+#legend span {
+	margin-right:30px;
+}
+
+#legend img {
+	padding-right:2px;
+}
+
+#arrow-left {
+margin-right:40%;
+}
+
+#arrow-right {
+margin-left:27%;
+}
+
+#calDaymonth {
+border-left:1px solid #ccc;
+border-top:1px solid #ccc;
+border-right:1px solid #ccc;
+padding:12px 0;
+}
+
+#calDaymonth span{
+padding-left:22px;
+}
+
+#timeList .row{
+	margin-left:0;
+}
+
+#calRow div.active {
+	background-color:green;
+}
+
+/*responsive table version */
+
+#ical .table tr th, #ical .table tr td  {
+	background-image:none;
+	width:auto;
+	padding:4% 4%;
+	text-align:center;
+}
+
+#ical table  {
+	border-style: hidden;
+	border-collapse: initial;
+    width:100%;
+}
+
+#ical .table tr th {
+border: 0;
+}
+
+#traditional .bord {
+border:2px solid #0a70bb;
+}
+
+ .avail {
+background-color:#0a70bb;
+border-right:1px solid #fff;
+border-bottom:1px solid #fff;
+}
+
+.avail span {
+color:#fff;
+}
+
+.select {
+/*background-color:#43ae0f;*/
+background-color:#fff;
+border:2px solid #0a70bb;
+}
+.select span {
+	color:#0a70bb;
+}
+
+#traditional .unavailable {
+background-color:#fff;
+}
+
+#traditional .unavailable span  {
+color:#333;
+}
+
+/* // adds too much padding for date in calendar
+ #ical div span:nth-child(2) {
+	margin:0 18px;
+ }
+ */
+/*resposible table version */
+
+/*- ////////////////////////// $Progress Indicator ///////////////////////////////  -*/
+/* --- START: PROGRESS INDICATOR --- */
+.progress-indicator {
+	margin: 0px 0px 40px 0;
+}
+.progress-indicator > div,
+.progress-indicator li {
+	padding: 14px 0 !important;
+	margin: 0px !important;
+	color: #6c6c6c; /* lola 12/Aug new color from specs*/
+	border-bottom: dotted 1px #DCDCDC; /* @Jere - 6/June RF - new color from specs */
+}
+.progress-indicator .title {
+	border-bottom: solid 1px #DCDCDC; /* @Jere - 6/June RF - new color from specs */
+	padding-top: 0 !important;
+}
+
+.progress-indicator .title h3 {
+	font-size: 14px;
+	color: #222222; /*lola Nov19 font color changes*/ 
+	font-weight: bold;
+	line-height: 18px;
+	margin: 0;
+}
+
+.progress-indicator .status {
+	overflow: hidden;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+}
+.progress-indicator .status.current {
+	border-bottom: none;
+	padding-bottom: 0 !important;
+	color: #6C6C6C; /* @Jere - 6/June RF - new color from specs */
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 0!important;
+}
+.progress-indicator .status.current h3 {
+	padding-top: 14px;
+}
+.progress-indicator .status.link,
+.progress-indicator .status.price,
+.progress-indicator .status.checked {
+	padding-right: 44% !important;
+}
+.progress-indicator .status a.indicator,
+.progress-indicator .status span.indicator,
+.progress-indicator .status.price span{ /* lola 12/Aug adding status indicator link style */
+	background: none;
+	right: 0;
+	font-weight: normal;
+	margin: 0;
+	font-size: 12px;
+	text-align: right;
+	position: absolute;
+	top: 14px;
+	width: 44%;
+	word-wrap: break-word;
+}
+
+.progress-indicator .status h3 {
+    color: #6C6C6C;
+    font-weight: bold;
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.progress-indicator .status a:hover {
+	color: #003A65;
+}
+.progress-indicator .status li a {
+	padding-left: 0px !important;
+	color: #0A70BC;
+	font-weight: normal;
+}
+
+.progress-indicator li,
+.progress-indicator li a {
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+}
+.progress-indicator li.selected a {
+	color: #cc0717;
+}
+.progress-indicator li.visited a {
+	color: #0a70bc
+}
+.progress-indicator li.visited a:hover, .progress-indicator li.visited a:focus {
+	color: #003a65 !important
+}
+
+.progress-indicator li.visited,
+.progress-indicator li.next,
+.progress-indicator li.selected {
+	padding-left: 24px !important;
+}
+
+/* lola 12/Aug */
+.progress-indicator li.checked,
+.progress-indicator li.next,
+.progress-indicator li.selected {
+	padding-right: 20px !important;
+	position: relative;
+}
+.progress-indicator li.selected img {
+	position: absolute;
+	right: 0;
+	top: 22px;
+}
+.progress-indicator .checked img {
+	position: absolute;
+	right: 0;
+	top: 18px;
+}
+/* lola 12/Aug END */
+
+.progress-indicator li span {
+	background: url(../img/navigation/quote-step.png) no-repeat 0 -21px transparent;
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	color: white;
+	font-size: 11px;
+	line-height: 19px;
+	text-align: center;
+	margin-left: -24px; /* @Jere  - 10/June RF - negative margin to prevent text below */
+	margin-right: 5px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	vertical-align: middle;
+}
+.progress-indicator li.next span{ /* lola 12/Aug */
+	color: #6c6c6c;
+}
+.progress-indicator li.selected span {
+	background-position: 0px 0px;
+}
+.progress-indicator li.visited span {
+	background-position: 0px -42px;
+}
+.progress-indicator .copy-link {
+	border-bottom: none;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+/*- ////////////////////////// $Help Suppport ///////////////////////////////  -*/
+
+.curr_day {
+display:block;
+padding:0;
+margin:0;
+}
+
+.no_visi {
+visibility:hidden;
+} 
+
+.yes_visi {
+visibility:visible;
+} 
+
+
+/*- ////////////////////////// Chrome Higlighting Fix ///////////////////////////////  -*/
+
+*:focus {
+    outline: 0;
+}
+
+.lbl {
+padding-left:12px;
+padding-bottom:10px;
+}
+
+.dateMenu {
+	background-color:#fafafa;	
+}
+
+.contact-module {
+padding-top: 0;
+background: url(../img/link-list-header-tertiary.png) repeat-x left top;
+clear: both;
+}
+
+.support-module {
+clear: both;
+position: relative;
+padding-bottom: 15px;
+-moz-border-radius: 0px 0px 7px 7px;
+-webkit-border-radius: 0px 0px 7px 7px;
+border-radius: 0px 0px 7px 7px;
+padding-top: 6px;
+border-right: 2px solid #eae8e2;
+border-bottom: 2px solid #eae8e2;
+background: #fff url(../img/support-module-top-bg.png) repeat-x 0 0;
+margin: 25px 0 25px 30px;
+}
+
+#triangle {
+ background: url(../img/support-module-bck-pointer.png) 0 0 no-repeat;
+}
+
+#location {
+margin-top:30px;
+}
+
+.dotted {
+border-top: 1px dotted #ccc;
+}
+
+.returnto {
+text-decoration:none;
+}
+
+#content form.simple-form #location h3 {
+margin-bottom:15px;
+}
